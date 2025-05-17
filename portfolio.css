@@ -130,3 +130,33 @@ header {
 }
 
 
+@media (max-width: 1024px) {
+  .job-header, .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
