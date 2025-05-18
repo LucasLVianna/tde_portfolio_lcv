@@ -46,41 +46,51 @@ header {
 .items li button:hover {
     background-color: #0056b3;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* CSS CONTATOS */
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-p{
-    font-size: 18px;
-}
 .card{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 1%;
-}
-.text{
-    text-align: center;
-    line-height: 2;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    box-sizing: border-box;
 }
 
-.card li{
-    list-style: none;
+.card h2 {
+    text-align: center;
 }
-.contatosLinks{
+.card h3 {
+    text-align: center;
     color: #0056b3;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: 20px auto;
+
+.card p{
+    text-align: center;
+    margin: 3px auto 3px auto;
 }
 
-form input,
-form textarea {
+form{
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    max-width: 500px;
+    margin: 30px auto 30px auto;
+}
+
+form textarea{
+    resize: none;
+}
+
+form input, form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -93,23 +103,9 @@ form button {
     background-color: #0056b3;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 form button:hover {
     background-color: #003d80;
-}
-
-
-@media (max-width:1024px){
-p{
-    font-size: 14px;
-}
-.card{
-    padding: 0;
-    margin: 5%;
-}
-h1{
-    font-size: 22px;
-}
-
 }
