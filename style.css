@@ -52,9 +52,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
     text-align: center;
-    height: 100%;
+    min-height: calc(100vh - 190px);
+    padding: 20px;
 }
 
 .img img {
@@ -92,5 +92,23 @@ header {
 .buttons button:hover {
     background-color: #0056b3;
     transition: .7s;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
 }
 

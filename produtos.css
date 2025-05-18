@@ -63,33 +63,76 @@ header {
 
 
 .card {
-  background-color: #ffffff;
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 340px;
-  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+  max-width: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .card h3 {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-top: 0;
-  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
 .card p {
   font-size: 16px;
   color: #555;
   margin-top: 12px;
+  text-align: center;
 }
+
+.veja-mais {
+  margin-top: auto; 
+  padding: 8px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.95rem;
+  max-width: 130px;
+  width: 100%;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.veja-mais:hover {
+  background-color: #0056b3;
+}
+
+
 
 @media (max-width: 1024px) {
   .container {
-    grid-template-columns: 1fr; /* stack cards em tela média/pequena */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -108,14 +151,5 @@ header {
 
   .card p {
     font-size: 14px;
-  }
-
-  .items ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .items li button {
-    width: 100%;
   }
 }
