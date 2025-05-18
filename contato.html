@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
     <div class="head">
@@ -18,6 +18,39 @@
                 </ul>
             </div>
         </header>
+    </div>
+    <div class="container">
+        <div class="card">
+            <ul>
+            <li class="text"><h1>Entre em contato</h1><br>
+                <p>Gostou do meu trabalho? Tem uma ideia, projeto ou colaboração em mente? Estou sempre aberto(a) a novas conexões e oportunidades. Sinta-se à vontade para me enviar uma mensagem</p></li>
+            <li class="contatos">
+                <p>Email: <a class="contatosLinks" href="">lcv.leandro.vianna@gmail.com</a></p><p>Linkedin: <a class="contatosLinks" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAZZO5ABeG-oVEIibK3T6R0kHqivdTBgRx8&keywords=leandro%20vianna&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=82ea8204-8011-4715-895f-dd5cee8071ef&sid=Ly2&spellCorrectionEnabled=true">Leandro Vianna</a></p><p>Telefone: <a class="contatosLinks" href="">+55 (41) 99131-3660</a></p>
+            </li>
+            <li>
+                <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: 20px auto;">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                    <button type="submit" >
+                        Enviar
+                    </button>
+                </form>
+            </li>
+
+            </ul>
+            
+        </div>
+        
     </div>
 </body>
 </html>
